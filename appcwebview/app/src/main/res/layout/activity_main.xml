@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#5FD4C3"
+        android:backgroundTint="@color/white"
+        app:itemIconTint="#105B50"
+        app:itemTextColor="#105B50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_dashboard" />
+
+    <Button
+        android:id="@+id/btYt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Youtube"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btTiktok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Tiktok"
+        app:layout_constraintBottom_toTopOf="@+id/btYt"
+        app:layout_constraintEnd_toEndOf="@+id/btYt"
+        app:layout_constraintStart_toStartOf="@+id/btYt" />
+
+    <Button
+        android:id="@+id/btMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Send Message"
+        app:layout_constraintEnd_toEndOf="@+id/btYt"
+        app:layout_constraintStart_toStartOf="@+id/btYt"
+        app:layout_constraintTop_toBottomOf="@+id/btYt" />
+
+    <!-- New Button -->
+    <Button
+        android:id="@+id/btData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Data MYSQL"
+        app:layout_constraintEnd_toEndOf="@+id/btMessage"
+        app:layout_constraintStart_toStartOf="@+id/btMessage"
+        app:layout_constraintTop_toBottomOf="@+id/btMessage" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:translationZ="5dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf = "parent" >
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

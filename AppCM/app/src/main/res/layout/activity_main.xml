@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tc_incomingmessage"
+        android:text="INCOMING MESSAGE"
+        android:textFontWeight="@integer/material_motion_duration_long_2"
+        android:gravity="center"
+        android:textColor="#0000FF"
+    />
+
+    <EditText
+        android:id="@+id/edToken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Token"
+        android:layout_below="@+id/tc_incomingmessage"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Notification"
+        android:text="NOTIFICATION"
+        android:layout_marginTop="20dp"
+        android:textFontWeight="@integer/material_motion_duration_long_2"
+        android:layout_below="@id/edToken"
+        android:textColor="#0000FF"
+        />
+
+    <EditText
+        android:id="@+id/edTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Notification"
+        android:layout_marginTop="16dp"
+        android:hint="Title" />
+
+    <EditText
+        android:id="@+id/edBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edTitle"
+        android:layout_marginTop="16dp"
+        android:hint="Body" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Data"
+        android:text="DATA"
+        android:layout_marginTop="20dp"
+        android:textFontWeight="@integer/material_motion_duration_long_2"
+        android:layout_below="@id/edBody"
+        android:textColor="#0000FF"
+        />
+
+    <EditText
+        android:id="@+id/edPromoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Data"
+        android:layout_marginTop="16dp"
+        android:hint="Promo ID" />
+
+    <EditText
+        android:id="@+id/edPromo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPromoId"
+        android:layout_marginTop="16dp"
+        android:hint="Promo" />
+
+    <EditText
+        android:id="@+id/edPromoUntil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPromo"
+        android:layout_marginTop="16dp"
+        android:hint="Promo Until" />
+
+</RelativeLayout>

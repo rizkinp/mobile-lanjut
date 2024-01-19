@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="Home"
+        android:icon="@drawable/ic_launcher_background" />
+
+    <item
+        android:id="@+id/menu_favorite"
+        android:title="Favorit"
+        android:icon="@drawable/ic_launcher_foreground" />
+
+    <item
+        android:id="@+id/menu_profile"
+        android:title="Profil"
+        android:icon="@drawable/ic_launcher_background" />
+</menu>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txLed"
+        android:layout_marginTop="32dp"
+        android:text="Led : ON"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txSuhu"
+        android:layout_marginTop="8dp"
+        android:text="Suhu : 0 C"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txLed"
+        app:layout_constraintStart_toStartOf="@+id/txLed"
+        app:layout_constraintTop_toBottomOf="@+id/txLed"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txTekanan"
+        android:layout_marginTop="8dp"
+        android:text="Tekanan : 0 hPa"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txSuhu"
+        app:layout_constraintStart_toStartOf="@+id/txSuhu"
+        app:layout_constraintTop_toBottomOf="@+id/txSuhu"
+        />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btLedOnOff"
+        style="@android:style/Widget.Material.Button.Toggle"
+        android:layout_marginTop="32dp"
+        android:text="LED ON/OFF"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txTekanan"
+        app:layout_constraintStart_toStartOf="@+id/txTekanan"
+        app:layout_constraintTop_toBottomOf="@+id/txTekanan"
+        />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btLedOnOff"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
